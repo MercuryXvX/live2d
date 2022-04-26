@@ -1,0 +1,191 @@
+{
+  "Version": 3,
+  "FileReferences": {
+    "Moc": "Excsiai.moc3",
+    "Textures": [
+      "Excsiai.4096/texture_00.png"
+    ],
+    "Physics": "Excsiai.physics3.json",
+    "Motions": {
+      "wink": [
+        {
+          "Name": "wink",
+          "File": "motions/wink.motion3.json"
+        }
+      ],
+      "heart": [
+        {
+          "Name": "heart",
+          "Expression": "heart"
+        }
+      ],
+      "star": [
+        {
+          "Name": "star",
+          "Expression": "star"
+        }
+      ],
+      "red": [
+        {
+          "Name": "red",
+          "Expression": "red"
+        }
+      ],
+      "black": [
+        {
+          "Name": "black",
+          "Expression": "black"
+        }
+      ],
+      "aha": [
+        {
+          "Name": "aha",
+          "Expression": "aha"
+        }
+      ],
+      "reset": [
+        {
+          "Name": "reset",
+          "Expression": "reset"
+        }
+      ]
+    },
+    "Expressions": [
+      {
+        "Name": "aha",
+        "File": "expressions/aha.exp3.json"
+      },
+      {
+        "Name": "heart",
+        "File": "expressions/heart.exp3.json"
+      },
+      {
+        "Name": "star",
+        "File": "expressions/star.exp3.json"
+      },
+      {
+        "Name": "red",
+        "File": "expressions/red.exp3.json"
+      },
+      {
+        "Name": "black",
+        "File": "expressions/black.exp3.json"
+      },
+      {
+        "Name": "reset",
+        "File": "expressions/reset.exp3.json"
+      }
+    ]
+  },
+  "Controllers": {
+    "ParamHit": {},
+    "ParamLoop": {},
+    "KeyTrigger": {},
+    "EyeBlink": {
+      "MinInterval": 500,
+      "MaxInterval": 6000,
+      "Items": [
+        {
+          "Id": "ParamEyeLOpen",
+          "Min": 0.0,
+          "Max": 1.0,
+          "BlendMode": 2,
+          "Input": 0
+        },
+        {
+          "Id": "ParamEyeROpen",
+          "Min": 0.0,
+          "Max": 1.0,
+          "BlendMode": 2,
+          "Input": 0
+        }
+      ],
+      "Enabled": true
+    },
+    "LipSync": {
+      "Gain": 5.0,
+      "Items": [
+        {
+          "Id": "ParamMouthForm",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Input": 0
+        },
+        {
+          "Id": "ParamMouthOpenY",
+          "Min": 0.0,
+          "Max": 1.0,
+          "Input": 0
+        }
+      ]
+    },
+    "MouseTracking": {
+      "SmoothTime": 0.15,
+      "Enabled": true
+    },
+    "AutoBreath": {
+      "Enabled": true
+    },
+    "ExtraMotion": {
+      "Enabled": true
+    },
+    "Accelerometer": {
+      "Enabled": true
+    },
+    "Microphone": {},
+    "Transform": {},
+    "FaceTracking": {
+      "Enabled": true
+    },
+    "ParamValue": {},
+    "PartOpacity": {},
+    "ArtmeshOpacity": {},
+    "ArtmeshColor": {},
+    "ArtmeshCulling": {
+      "DefaultMode": 0
+    },
+    "IntimacySystem": {}
+  },
+  "HitAreas": [
+    {
+      "Name": "wink",
+      "Id": "halo",
+      "Motion": "wink:wink"
+    },
+    {
+      "Name": "heart",
+      "Id": "wing",
+      "Motion": "heart:heart"
+    },
+    {
+      "Name": "star",
+      "Id": "pupil_l",
+      "Order": 3,
+      "Motion": "star:star"
+    },
+    {
+      "Name": "red",
+      "Id": "face",
+      "Order": 1,
+      "Motion": "red:red"
+    },
+    {
+      "Name": "black",
+      "Id": "body_A3",
+      "Motion": "black:black"
+    },
+    {
+      "Name": "aha",
+      "Id": "front_2_shadow3",
+      "Order": 2,
+      "Motion": "aha:aha"
+    },
+    {
+      "Name": "reset",
+      "Id": "hand_r3",
+      "Order": 2,
+      "Motion": "reset:reset"
+    }
+  ],
+  "Options": {}
+}
